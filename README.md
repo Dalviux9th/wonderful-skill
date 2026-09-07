@@ -9,4 +9,4 @@ Grupo nro 1. Integrantes:
 |Denicolay, Enzo|edenicolay@alumnos.exa.unicen.edu.ar|
 |Boroni, Leandro|leandroboroni1@gmail.com|
 
-Skill implementada con Skill Creator de Antropic/Claude.
+Skill implementada con Skill Creator de Anthropic/Claude.
