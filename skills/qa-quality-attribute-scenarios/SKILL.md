@@ -31,12 +31,35 @@ Pasos:
    posibles de esa categoría (consultar el reference) como guía, con
    contenido específico derivado del RNF — no copiar los valores posibles
    tal cual, adaptarlos al caso concreto.
+3.b. **Si el RNF no da un valor de Response measure cuantificable**
+   (situación frecuente en ejercicios), no dejarlo vacío ni como
+   "a confirmar": completar con una **medida genérica apropiada a la
+   categoría** — es decir, nombrar el *tipo* de medida esperable (unidad
+   y qué mide), sin inventar un número. Ejemplos de medidas genéricas por
+   tipo de situación: "tiempo de context switch, medido en nanosegundos",
+   "cantidad de piezas perdidas por stall", "pérdidas monetarias, en
+   pesos", "throughput en operaciones satisfactorias por minuto", "tiempo
+   de respuesta". Basarse en los valores posibles de Response measure de
+   esa categoría en el reference para elegir el tipo más adecuado al
+   contexto del RNF. Marcar siempre esa medida como **genérica**, con un
+   sufijo tipo `(genérico, no explicitado en el RNF)`, para distinguirla
+   de una medida que sí vino explícita en el RNF.
 4. Presentar el resultado en dos formatos (el usuario pidió ambos):
    - **Tabla markdown en el chat**, con columnas en español: `Fuente`,
      `Estímulo`, `Artefacto`, `Entorno`, `Respuesta`, `Medida de respuesta`.
-   - **Archivo descargable** (xlsx o csv, a elección; para xlsx consultar
-     `/mnt/skills/public/xlsx/SKILL.md` antes de generarlo) con la misma
-     tabla, para que el usuario lo guarde o lo siga completando afuera.
+   - **Archivo descargable único y acumulativo** — no crear un archivo
+     nuevo por cada RNF (satura la bandeja de descargas). Usar siempre el
+     mismo archivo `escenarios_qa_log.xlsx` (consultar
+     `/mnt/skills/public/xlsx/SKILL.md` antes de generarlo/editarlo) y
+     **agregar** cada escenario nuevo como un bloque debajo de los
+     anteriores, separado por una fila en blanco. Cada bloque lleva, antes
+     de la tabla de 6 columnas:
+     - una fila con el **RNF original** (texto tal cual lo dio el usuario), y
+     - una fila con la **categoría deducida** (o `PENDIENTE` + motivo).
+     Si el archivo ya existe de una ejecución anterior de esta skill en la
+
+     conversación, leerlo primero y agregar el bloque al final; no
+     sobreescribir los bloques previos.
 5. Si algún RNF da para más de un escenario concreto (p. ej. dos modos
    de operación distintos), generar una fila por escenario, no forzar
    uno solo.
