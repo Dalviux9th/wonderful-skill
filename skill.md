@@ -1,5 +1,5 @@
 ---
-name: wonderful-skill
+name: qa-skill
 description: Use this skill whenever the user gives a non-functional requirement (Quality Attribute) in natural language and wants it classified into a software quality attribute and structured as a 6-part quality attribute scenario SEI (Fuente/Source, Estímulo/Stimulus, Artefacto/Artifact, Entorno/Environment, Respuesta/Response, Medida de respuesta/Response measure), following the Bass/Clements/Kazman "Software Architecture in Practice" framework. Also use this skill when the user asks to check whether an existing QA scenario is complete and get suggestions to fill gaps, or when the user asks to build a "árbol de utilidad" / utility tree from a set of scenarios. Triggers include, "escenario de QA", "atributo de calidad", "árbol de utilidad", "utility tree", or a request to classify/complete a quality-attribute scenario.
 ---
 
