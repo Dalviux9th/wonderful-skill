@@ -16,3 +16,9 @@ Responde a las 3 tareas solicitadas:
 - Verificar completitud y corrige un escenario propuesto por el usuario.
 - Armar un arbol de utilidad (utility tree) en base a descripciones o escenarios aportados por el usuario.
 
+### Testing Log
+Resultados de testing de ejemplos de escenarios de atributos de calidad
+[resultados_qa_scenarios.xlsx](https://github.com/user-attachments/files/32027236/resultados_qa_scenarios.xlsx)
+
+Resultado del árbol de utilidad generado por la Skill
+[resultados_utility_tree.txt](https://github.com/user-attachments/files/32027249/resultados_utility_tree.txt)
