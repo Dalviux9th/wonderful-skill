@@ -27,14 +27,14 @@ Cuando se solicite generar escenarios de atributos de calidad se debe:
 - Respuesta
 - Medida de respuesta
 usando los posibles de esa categoría (consultar resources) como guía. No copiar los valores posibles, adaptarlos al caso concreto.
-Si el QA no da un valor de Response measure cuantificable, no dejarlo vacío ni como "a confirmar": completar con una medida genérica apropiada a la categoría — es decir, nombrar el tipo de medida esperable (unidad y qué mide), sin inventar un número. Ejemplos de medidas genéricas por tipo de situación: "tiempo de context switch, medido en nanosegundos", "cantidad de piezas perdidas por stall", "pérdidas monetarias, en dolares", "throughput en operaciones satisfactorias por minuto", "tiempo de respuesta". Basarse en los valores posibles de Response measure de esa categoría en el resource para elegir el tipo más adecuado al contexto. Marcar siempre esa medida como **genérica**, con un sufijo tipo `(genérico, no explicitado en la descripcion)`, para distinguirla de una medida que sí vino explícita en el RNF.
+Si el QA no da un valor de Response measure cuantificable, no dejarlo vacío ni como "a confirmar": completar con una medida genérica apropiada a la categoría — es decir, nombrar el tipo de medida esperable (unidad y qué mide), sin inventar un número. Ejemplos de medidas genéricas por tipo de situación: "tiempo de context switch, medido en nanosegundos", "cantidad de piezas perdidas por stall", "pérdidas monetarias, en dolares", "throughput en operaciones satisfactorias por minuto", "tiempo de respuesta". Basarse en los valores posibles de Response measure de esa categoría en el resource para elegir el tipo más adecuado al contexto. Marcar siempre esa medida como **genérica**, con un sufijo tipo `(genérico, no explicitado en la descripcion)`, para distinguirla de una medida que sí vino explícita en la descripcion.
 
 4. Verificar el escenario de atributos de calidad generado utilizando el verificador propio de la skill.
 
 5. Presentar el resultado en dos formatos:
    - Tabla markdown en el chat, con columnas en español: `Fuente del estimulo`,
      `Estímulo`, `Artefacto`, `Entorno`, `Respuesta`, `Medida de respuesta`.
-   - Archivo descargable único y acumulativo — no crear un archivo nuevo por cada RNF. Usar siempre el mismo archivo `escenarios_qa_log.xlsx` (consultar `/mnt/skills/public/xlsx/SKILL.md` antes de generarlo/editarlo) y **agregar** cada escenario nuevo como un bloque debajo de los anteriores, separado por una fila en blanco. Cada bloque lleva, antes
+   - Archivo descargable único y acumulativo — no crear un archivo nuevo por cada escenario de atributo de calidad. Usar siempre el mismo archivo `escenarios_qa_log.xlsx` (consultar `/mnt/skills/public/xlsx/SKILL.md` antes de generarlo/editarlo) y **agregar** cada escenario nuevo como un bloque debajo de los anteriores, separado por una fila en blanco. Cada bloque lleva, antes
      de la tabla de 6 columnas:
      - una fila con el texto tal cual lo dio el usuario
      - una fila con la categoría deducida (o `PENDIENTE` + motivo). Si el archivo ya existe de una ejecución anterior de esta skill en la conversación, leerlo primero y agregar el bloque al final; no

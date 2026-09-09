@@ -62,12 +62,6 @@ La modificabilidad se refiere, fundamentalmente, al coste y al riesgo que conlle
 5. Respuesta: Realizar el cambio e incorporarlo al sistema. (Una o más de las siguientes acciones: realizar la modificación, probar la modificación, implementar la modificación, auto-modificarse)
 6. Medida de respuesta: Los recursos que se han empleado para realizar el cambio. (Coste en términos de: número, tamaño y complejidad de los artefactos afectados; esfuerzo; tiempo transcurrido)
 
-- **Ejemplo del libro**: un desarrollador quiere cambiar
-  la interfaz de usuario; el cambio se hace en tiempo de diseño, toma
-  menos de tres horas hacerlo y probarlo, sin efectos secundarios.
-
-
-
 ## Rendimiento (Performance)
 Tiene que ver con el tiempo: cómo responde el sistema a los eventos (interrupciones, solicitudes, mensajes o impulsos del reloj) dentro de unos límites aceptables de tiempo o de rendimiento. Todo sistema tiene requisitos de rendimiento.
 ### Escenario General
@@ -77,10 +71,6 @@ Tiene que ver con el tiempo: cómo responde el sistema a los eventos (interrupci
 4. Ambiente: El estado del sistema o del componente cuando llega el estímulo. Los modos inusuales —modo de error, modo de sobrecarga— afectarán a la respuesta. Por ejemplo, se permiten tres intentos fallidos de inicio de sesión antes de que se bloquee el dispositivo. (Tiempo de ejecución. El sistema o componente puede estar funcionando en: modo normal, modo de emergencia, modo de corrección de errores, carga máxima, modo de sobrecarga, modo de funcionamiento degradado, algún otro modo definido del sistema)
 5. Respuesta: El sistema procesará el estímulo. El procesamiento del estímulo llevará tiempo. Este tiempo puede ser necesario para el cálculo, o bien puede deberse a que el procesamiento se ve bloqueado por la contienda por los recursos compartidos. Las solicitudes pueden no satisfacerse debido a que el sistema está sobrecargado o a un fallo en algún punto de la cadena de procesamiento. (El sistema devuelve una respuesta, el sistema devuelve un error, el sistema no genera ninguna respuesta, el sistema ignora la solicitud si está sobrecargado, el sistema cambia el modo o el nivel de servicio, el sistema atiende un evento de mayor prioridad, el sistema consume recursos)
 6. Medida de respuesta: Las medidas de tiempo pueden incluir la latencia o el rendimiento. Los sistemas con plazos de tiempo también pueden medir la fluctuación de la respuesta y la capacidad para cumplir dichos plazos. Medir cuántas de las solicitudes quedan sin atender también es un tipo de medida, al igual que la cantidad de recursos informáticos (por ejemplo, CPU, memoria, grupo de subprocesos, búfer) que se utiliza. (El tiempo (máximo, mínimo, medio, mediana) que tarda la respuesta (latencia); el número o porcentaje de solicitudes atendidas durante un intervalo de tiempo determinado (rendimiento) o un conjunto de eventos recibidos; el número o porcentaje de solicitudes que quedan sin atender; la variación en el tiempo de respuesta (fluctuación); el nivel de uso de un recurso informático)
-
-- **Ejemplo del libro**: 500 usuarios inician 2000 pedidos
-  en 30 segundos bajo operación normal; el sistema procesa todos los
-  pedidos con una latencia promedio de 2 segundos.
 
 ## Proteccion (Safety)
 La proteccion se refiere a la capacidad de un sistema para evitar entrar en estados que puedan provocar lesiones, la muerte o daños, así como para detectarlos y recuperarse en caso de que se produzcan. Los estados inseguros pueden surgir de omisiones, eventos espurios («de comisión»), eventos inoportunos, valores incorrectos (obviamente erróneos o sutilmente erróneos) y eventos que faltan o están fuera de secuencia.
@@ -101,11 +91,6 @@ Mide la capacidad de un sistema para proteger los datos y los servicios frente a
 4. Ambiente: ¿Cuál es el estado del sistema cuando se produce el ataque? El sistema está: (en línea o fuera de línea, conectado o desconectado de una red, protegido por un cortafuegos o abierto a una red, totalmente operativo, parcialmente operativo, no operativo)
 5. Respuesta: El sistema garantiza el mantenimiento de la confidencialidad, la integridad y la disponibilidad. Las transacciones se llevan a cabo de tal manera que (los datos o servicios estén protegidos contra el acceso no autorizado; los datos o servicios no sean manipulados sin autorización; las partes de una transacción sean identificadas con certeza; las partes de la transacción no puedan negar su participación; y los datos, recursos y servicios del sistema estén disponibles para su uso legítimo, El sistema realiza un seguimiento de las actividades que tienen lugar en su interior mediante: (el registro de accesos o modificaciones; el registro de intentos de acceso a datos, recursos o servicios; la notificación a las entidades pertinentes —personas o sistemas— cuando se produce un ataque aparente))
 6. Medida de respuesta: Las medidas de respuesta de un sistema están relacionadas con la frecuencia de los ataques que tienen éxito, el tiempo y el coste que supone resistir y reparar los ataques, y los daños derivados de dichos ataques. Uno o varios de los siguientes aspectos: (qué parte de un recurso se ve comprometida o garantizada; la precisión en la detección de ataques; cuánto tiempo transcurrió antes de que se detectara un ataque; cuántos ataques se repelieron; cuánto tiempo se tarda en recuperarse de un ataque exitoso; qué cantidad de datos es vulnerable a un ataque concreto)
-
-- **Ejemplo del libro (parafraseado)**: un empleado descontento intenta
-  modificar indebidamente la tabla de sueldos en operación normal; el
-  acceso no autorizado se detecta, el sistema mantiene un registro de
-  auditoría, y el dato correcto se restaura en menos de un día.
 
 ## Testabilidad (Testability)
 Es la facilidad con la que el software revela sus fallos mediante las pruebas; dicho de manera informal, si existe un error, ¿qué probabilidad hay de que salga a la luz en la siguiente ejecución de pruebas? Una buena testabilidad también implica que sea fácil reproducir un error y delimitar su causa.
@@ -128,9 +113,6 @@ Se refiere a la facilidad con la que un usuario puede llevar a cabo lo que se pr
 4. Ambiente: ¿Cuándo llega el estímulo al sistema? (Las acciones del usuario que afectan a la usabilidad siempre tienen lugar en tiempo de ejecución o en el momento de la configuración del sistema.)
 5. Respuesta: ¿Cómo debe responder el sistema? (Proporcionar al usuario las funciones necesarias, anticiparse a las necesidades del usuario, proporcionar una retroalimentación adecuada al usuario)
 6. Medida de respuesta: ¿Cómo se mide la respuesta? (Tiempo de realización de la tarea, número de errores, tiempo de aprendizaje, relación entre el tiempo de aprendizaje y el tiempo de realización de la tarea, número de tareas completadas, satisfacción del usuario, aumento de los conocimientos del usuario, relación entre las operaciones correctas y el total de operaciones, cantidad de tiempo o datos perdidos cuando se produce un error)
-**Ejemplo del libro (parafraseado)**: un usuario descarga una
-  aplicación nueva y ya la está usando productivamente tras 2 minutos de
-  experimentación.
 
 ---
 
@@ -152,7 +134,7 @@ Para un atributo de calidad en lenguaje natural:
    en ninguna → PENDIENTE.
 2. **Instanciar el escenario concreto**: completar Source, Stimulus,
    Artifact, Environment, Response y Response Measure con el contenido
-   específico del RNF, usando como guía los valores posibles de la
+   específico del atributo de calidad, usando como guía los valores posibles de la
    categoría correspondiente de arriba.
 3. **Construir la tabla de 6 columnas** con esos valores como fila del
    escenario de QA.
