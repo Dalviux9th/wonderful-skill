@@ -17,8 +17,17 @@ Responde a las 3 tareas solicitadas:
 - Armar un arbol de utilidad (utility tree) en base a descripciones o escenarios aportados por el usuario.
 
 ### Testing Log
-Resultados de testing de ejemplos de escenarios de atributos de calidad
+
+Resultados de testing de escenarios de atributos de calidad
 [resultados_qa_scenarios.xlsx](https://github.com/user-attachments/files/32027236/resultados_qa_scenarios.xlsx)
 
 Resultado del árbol de utilidad generado por la Skill
 [resultados_utility_tree.txt](https://github.com/user-attachments/files/32027249/resultados_utility_tree.txt)
+
+#### Testing con ejemplos del libro "Software Architecture in Practice" 4th Ed.(Bass et al.)
+
+Resultados de escenarios de atributos de calidad 
+[resultados_qa_libro.xlsx](https://github.com/user-attachments/files/32030558/resultados_qa_libro.xlsx)
+
+Resultado del árbol de utilidad generado por la Skill
+[resultados_utility_tree_libro.txt](https://github.com/user-attachments/files/32030615/resultados_utility_tree_libro.txt)
